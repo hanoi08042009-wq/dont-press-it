@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+#game {
+  width: min(92vw, 500px);
+  min-height: 650px;
+  padding: 25px;
+  text-align: center;
+  background: #1f2937;
+  border-radius: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+#title {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+#challenge {
+  font-size: 25px;
+  font-weight: bold;
+  min-height: 80px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.game-button {
+  height: 110px;
+  border: none;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .15s;
+}
+
+.game-button:hover {
+  transform: scale(1.05);
+}
+
+#message {
+  height: 50px;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#restart {
+  display: none;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
